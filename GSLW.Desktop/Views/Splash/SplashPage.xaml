@@ -1,0 +1,16 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GSLW.Desktop.Views.Splash.SplashPage"
+             BackgroundColor="#21342D">
+
+	<Grid>
+		<VerticalStackLayout Padding="60" Spacing="18" VerticalOptions="CenterAndExpand">
+			<Image Source="neon_green_safe.png" HeightRequest="90" HorizontalOptions="Center"/>
+			<Label Text="Bem-vindo ao GSLW"
+                   FontSize="26" FontAttributes="Bold"
+                   TextColor="#90FFAA"
+                   HorizontalOptions="Center"/>
+			<ActivityIndicator IsRunning="True" Color="#90FFAA" HeightRequest="50"/>
+		</VerticalStackLayout>
+	</Grid>
+</ContentPage>

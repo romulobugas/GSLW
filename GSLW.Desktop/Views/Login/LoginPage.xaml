@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GSLW.Desktop.Views.Login.LoginPage"
+    BackgroundColor="#23282e">
+
+	<Grid>
+		<!-- IMAGEM DE FUNDO -->
+		<Image
+            Source="vault_icon.png"
+            Aspect="AspectFill"
+            Opacity="0.18"
+            IsVisible="True"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
+
+		<!-- CONTEÚDO CENTRAL -->
+		<Frame
+            BackgroundColor="#293640"
+            Padding="36"
+            CornerRadius="18"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="400"
+            HasShadow="True">
+
+			<VerticalStackLayout Spacing="24">
+				<!-- Logo -->
+				<Image Source="vault_icon.png"
+                        HeightRequest="56"
+                        HorizontalOptions="Center" />
+
+
+				<!-- Título -->
+				<Label Text="Acesse seu Cofre"
+                       FontSize="24"
+                       TextColor="#41ef99"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,8"/>
+
+				<!-- Usuário -->
+				<Label Text="Usuário" TextColor="#a3b9b1" FontSize="16"/>
+				<Entry
+                    x:Name="UserEntry"
+                    Placeholder="Digite seu usuário"
+                    TextColor="#ffffff"
+                    BackgroundColor="#23282e"
+                    PlaceholderColor="#6c817a"
+                    FontSize="16"
+                    HeightRequest="44"
+                    Margin="0,0,0,10"/>
+
+				<!-- Senha -->
+				<Label Text="Senha" TextColor="#a3b9b1" FontSize="16"/>
+				<Entry
+                    x:Name="PasswordEntry"
+                    Placeholder="Digite sua senha"
+                    IsPassword="True"
+                    TextColor="#ffffff"
+                    BackgroundColor="#23282e"
+                    PlaceholderColor="#6c817a"
+                    FontSize="16"
+                    HeightRequest="44"
+                    Margin="0,0,0,14"/>
+
+				<!-- Botão de Login -->
+				<Button
+                    Text="Entrar"
+                    BackgroundColor="#41ef99"
+                    TextColor="#23282e"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="9"
+                    HeightRequest="44"
+                    Clicked="OnLoginClicked"/>
+			</VerticalStackLayout>
+		</Frame>
+	</Grid>
+</ContentPage>
