@@ -11,7 +11,6 @@ namespace GSLW.Desktop.Views.Login
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            // Simulação de login - troque pela sua lógica depois!
             if (UserEntry.Text == "admin" && PasswordEntry.Text == "1234")
             {
                 await DisplayAlert("Sucesso", "Login realizado!", "OK");
