@@ -75,7 +75,9 @@ dotnet build
 dotnet run
 
 5. **Siga as instruções na interface para criar, importar ou exportar seus secrets.**
+
 📅 Roadmap
+
  Estruturação do projeto e organização da base (core, api, desktop)
 
  CRUD seguro de secrets (criptografia local)
