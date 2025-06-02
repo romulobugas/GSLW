@@ -22,5 +22,11 @@ namespace GSLW.Desktop.Views.Login
                 await DisplayAlert("Erro", "Usuário ou senha inválidos", "OK");
             }
         }
+
+        private async void OnRegisterClicked(object sender, EventArgs e)
+        {
+            // Troca para a tela de Cadastro
+            Microsoft.Maui.Controls.Application.Current.MainPage = new GSLW.Desktop.Views.Register.RegisterPage();
+        }
     }
 }
