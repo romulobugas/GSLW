@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="GSLW.Desktop.Views.Login.LoginPage"
+    x:Class="GSLW.Desktop.Views.Register.RegisterPage"
     BackgroundColor="#23282e">
 
 	<Grid>
@@ -33,7 +33,7 @@
 
 
 				<!-- Título -->
-				<Label Text="Acesse seu Cofre"
+				<Label Text="Cadastro"
                        FontSize="24"
                        TextColor="#41ef99"
                        FontAttributes="Bold"
@@ -43,7 +43,7 @@
 				<!-- Usuário -->
 				<Label Text="Usuário" TextColor="#a3b9b1" FontSize="16"/>
 				<Entry
-                    x:Name="UserEntry"
+                    x:Name="NewUserEntry"
                     Placeholder="Digite seu usuário"
                     TextColor="#ffffff"
                     BackgroundColor="#23282e"
@@ -54,8 +54,8 @@
 
 				<!-- Senha -->
 				<Label Text="Senha" TextColor="#a3b9b1" FontSize="16"/>
-				<Entry
-                    x:Name="PasswordEntry"
+                <Entry
+                    x:Name="NewPasswordEntry"
                     Placeholder="Digite sua senha"
                     IsPassword="True"
                     TextColor="#ffffff"
@@ -65,25 +65,11 @@
                     HeightRequest="44"
                     Margin="0,0,0,14"/>
 
-				<!-- Botão de Login -->
-				<Button
-                    Text="Entrar"
-                    BackgroundColor="#41ef99"
-                    TextColor="#23282e"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                    CornerRadius="9"
-                    HeightRequest="44"
-                    Clicked="OnLoginClicked"/>
-                
                 <!-- Novo Cadastro -->
-                <Button Text="Novo cadastro" 
-                       BackgroundColor="#41ef99"
-                       TextColor="#23282e"
-                       FontAttributes="Bold"
-                       FontSize="18"
-                       CornerRadius="9"
-                       HeightRequest="44"
+                <Button Text="Avançar" 
+                       TextColor="#a3b9b1" 
+                       FontSize="20"
+                       HorizontalOptions="Center"
                        Clicked="OnRegisterClicked"/>
 
             </VerticalStackLayout>

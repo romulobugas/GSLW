@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage  
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+    x:Class="GSLW.Desktop.Views.Words.WordsPage"  
+    BackgroundColor="#23282e">  
+
+    <Grid>  
+        <!-- IMAGEM DE FUNDO -->  
+        <!--<Image  
+            Source="vault_icon.png"  
+            Aspect="AspectFill"  
+            Opacity="0.18"  
+            IsVisible="True"  
+            HorizontalOptions="FillAndExpand"  
+            VerticalOptions="FillAndExpand" />-->  
+
+        <!-- CONTEÚDO CENTRAL -->  
+        <Border  
+            BackgroundColor="#293640"  
+            Padding="36"  
+            StrokeShape="RoundRectangle 18"  
+            HorizontalOptions="Center"  
+            VerticalOptions="Center"  
+            WidthRequest="500"  
+            Shadow="True">  
+
+            <VerticalStackLayout Spacing="24">  
+                <!-- Logo -->  
+                <Image Source="vault_icon.png"  
+                        HeightRequest="150"  
+                        HorizontalOptions="Center" />  
+
+                <!-- Título -->  
+                <Label Text="Copie suas Palavras Chave"  
+                       FontSize="24"  
+                       TextColor="#41ef99"  
+                       FontAttributes="Bold"  
+                       HorizontalOptions="Center"  
+                       Margin="0,0,0,8"/>  
+
+                <!-- Texto explicativo substituído por Label -->  
+                <Label Text="Pedimos que por questão de segurança e privacidade faça um backup de suas senhas e copie e guarde suas 12 palavras, as mesmas poderão servir para recuperação de conta e liberação de suas senhas guardadas."  
+                       FontSize="16"  
+                       TextColor="#ffffff"  
+                       HorizontalOptions="Center"  
+                       VerticalOptions="Center"  
+                       LineBreakMode="WordWrap" />  
+
+                <Grid  
+                    Padding="20"  
+                    ColumnSpacing="10"  
+                    RowSpacing="10"  
+                    VerticalOptions="Center"  
+                    HorizontalOptions="Center">  
+
+                    <Grid.ColumnDefinitions>  
+                        <ColumnDefinition Width="Auto"/>  
+                        <ColumnDefinition Width="Auto"/>  
+                        <ColumnDefinition Width="Auto"/>  
+                        <ColumnDefinition Width="Auto"/>  
+                    </Grid.ColumnDefinitions>  
+
+                    <Grid.RowDefinitions>  
+                        <RowDefinition Height="Auto"/>  
+                        <RowDefinition Height="Auto"/>  
+                        <RowDefinition Height="Auto"/>  
+                    </Grid.RowDefinitions>  
+
+                    <!-- Linha 1 -->  
+                    <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="1-jump" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="2-stuff" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="3-brand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="4-wasp" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <!-- Linha 2 -->  
+                    <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="5-provide" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="6-mistake" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="1" Grid.Column="2" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="7-gorilla" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="1" Grid.Column="3" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="8-trigger" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <!-- Linha 3 -->  
+                    <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="9-dinner" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="10-peanut" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="2" Grid.Column="2" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="11-expose" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>  
+
+                    <Border Grid.Row="2" Grid.Column="3" Style="{StaticResource PalavraBorderEstilo}">  
+                        <Label Text="12-install" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>  
+                    </Border>                   
+
+                </Grid>  
+                
+                
+
+            </VerticalStackLayout>
+
+        </Border>  
+    </Grid>  
+
+    <!-- Correção: Mover o estilo para um ResourceDictionary -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="PalavraBorderEstilo" TargetType="Border">
+                <Setter Property="Margin" Value="3"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#EEEEEE"/>
+                <Setter Property="StrokeShape" Value="RoundRectangle 8"/>
+                <Setter Property="Shadow" Value="False"/>
+            </Style>
+            </ResourceDictionary>
+    </ContentPage.Resources>
+
+</ContentPage>
